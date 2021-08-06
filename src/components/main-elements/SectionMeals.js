@@ -1,6 +1,6 @@
 import mealData from '../../data'
 import { makeStyles } from '@material-ui/core/styles';
-
+import { MealCol }  from '../breakpoints';
 
 const useMealPicStyles = makeStyles({
     imgContainer: {
@@ -9,9 +9,6 @@ const useMealPicStyles = makeStyles({
         listStyle: 'none',
         width: '100%',
         fontSize: '0'
-    },
-    mealPhotoLi: {
-        width: '25%'
     },
     mealPhotoFigure: {
         width: '100%',
@@ -37,15 +34,15 @@ const SectionMeals = () => {
 
     return (
         <section className="section-meals">
-            <ul className={classes.imgContainer}>
+            <div className={classes.imgContainer}>
                 {mealpicData.map(({id, pic, alt}) => 
-                <li key={id} className={classes.mealPhotoLi}>
+                <MealCol key={id} >
                     <figure className={classes.mealPhotoFigure}>
                         <img className={classes.img} src={pic} alt={alt} />
                     </figure> 
-                </li>
+                </MealCol>
                 )} 
-            </ul>
+            </div>
         </section>
     );
 }
