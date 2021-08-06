@@ -12,10 +12,9 @@ const useHeroBoxStyles = makeStyles({
       textTransform: 'uppercase',
       fontWeight: '300',
       color: '#fff',
-      marginLeft: '2em'
     },
     BtnContainer: {
-      marginLeft: '4em'
+    
     },
     HeroBtn: {
      background: '#17cf45',
@@ -25,7 +24,6 @@ const useHeroBoxStyles = makeStyles({
      marginRight: '1em',
      borderRadius: '150px',
      border: 'none',
-     width: '10%',
      cursor: 'pointer'
     }
 })

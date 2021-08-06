@@ -22,6 +22,7 @@ const useStepStyles = makeStyles({
   },
   iconDiv: {
     display: 'flex',
+    flexWrap:'wrap',
     width: '65%'
   },
   iconApp: {

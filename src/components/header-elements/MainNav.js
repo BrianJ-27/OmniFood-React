@@ -7,7 +7,6 @@ const useNavStyles = makeStyles ({
         justifyContent: 'space-between',
         flexWrap: 'wrap',
         alignItems: 'center',
-        margin: '0 4em'
     },
     mainNav: {
         display: 'flex',
