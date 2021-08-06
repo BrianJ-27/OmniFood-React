@@ -1,59 +1,60 @@
-import { makeStyles } from '@material-ui/core/styles';
-import logo from '../../img/logo-white.png';
+import { makeStyles } from "@material-ui/core/styles";
+import logo from "../../img/logo-white.png";
+import { Wrapper, FlexDiv } from "../breakpoints";
+import { MainNav, NavListItem, NavLinks } from "./navStyles";
 
-const useNavStyles = makeStyles ({
-    navFlexContainer:{
-        display: 'flex',
-        justifyContent: 'space-between',
-        flexWrap: 'wrap',
-        alignItems: 'center',
-    },
-    mainNav: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        listStyle: 'none',
-    },
-    mainNavLi: {
-        marginRight: '1em'
-    },
-    links: {
-        color: '#fff',
-        textDecoration: 'none',
-        textTransform: 'uppercase',
-        fontSize: '1.2em',
-        fontWeight: '300',
-        letterSpacing: '.5px'
-    }
+const useNavStyles = makeStyles({
+  mainNavLi: {
+    marginRight: "1em",
+  },
+  navLinks: {
+    color: "#fff",
+    textDecoration: "none",
+    textTransform: "uppercase",
+    fontSize: "1.2em",
+    fontWeight: "300",
+    letterSpacing: ".5px",
+  },
 });
 
 const MainNavigation = () => {
 
-    const classes = useNavStyles();
-    
-    return (
-        <nav>
-            <div className={classes.navFlexContainer}>
-                <img src={logo} alt="Omnifood logo" style={{ width: '100px' }} />
-                <ul className={classes.mainNav}>
-                    <li className={classes.mainNavLi}>
-                        <a className={classes.links} href="#features">Food Delivery</a>
-                    </li>
-                    <li className={classes.mainNavLi}>
-                        <a className={classes.links}href="#works">How it Works</a>
-                    </li>
-                    <li className={classes.mainNavLi}>
-                        <a className={classes.links}href="#cities">Our Cities</a>
-                    </li>
-                    <li className={classes.mainNavLi}>
-                        <a className={classes.links}href="#plans">Sign Up</a>
-                    </li>
-                </ul>
-                {/* <a href="#icon" className="mobile-nav-icon js--nav-icon">
+  const classes = useNavStyles();
+
+  return (
+    <nav>
+      <Wrapper>
+        <FlexDiv>
+          <img src={logo} alt="Omnifood logo" style={{ width: "100px" }} />
+          <ul>
+            <NavListItem >
+              <NavLinks className={classes.navLinks} href="#features">
+                Food Delivery
+              </NavLinks>
+            </NavListItem>
+            <NavListItem>
+              <NavLinks className={classes.navLinks} href="#works">
+                How it Works
+              </NavLinks>
+            </NavListItem>
+            <NavListItem>
+              <NavLinks href="#cities">
+                Our Cities
+              </NavLinks>
+            </NavListItem>
+            <NavListItem>
+              <NavLinks className={classes.navLinks} href="#plans">
+                Sign Up
+              </NavLinks>
+            </NavListItem>
+          </ul>
+          {/* <a href="#icon" className="mobile-nav-icon js--nav-icon">
                     icon here -{" "}
                 </a> */}
-            </div>
-        </nav>
-    )
-}
+        </FlexDiv>
+      </Wrapper>
+    </nav>
+  );
+};
 
 export default MainNavigation;
