@@ -14,12 +14,6 @@ import styled from 'styled-components';
 //     xl: `(min-width: ${size.xl})`
 //    }
 
- export const MealCol = styled.div`
-     width: 50% ;  
-     @media (min-width: 1024px) {
-        width: 25%;
-      }
- `;
 
 
 
