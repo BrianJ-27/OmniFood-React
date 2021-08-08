@@ -1,8 +1,7 @@
 import { testimonialData } from "../../data";
-import { makeStyles } from '@material-ui/core/styles';
-import { FlexDiv, ReviewCol }  from '../breakpoints';
 import bgImg from '../../img/back-customers.jpg'
 import { IoStarSharp } from "react-icons/io5";
+import { makeStyles } from '@material-ui/core/styles';
 
 const useTestimonialStyles = makeStyles({
   sectionTestimonial: {
@@ -36,9 +35,9 @@ const SectionTestimonials = () => {
       <div className="row">
         <h2>Our customers can't live without us</h2>
       </div>
-      <FlexDiv>
+      <div className='flex_container'>
         {testimonialData.map(({id, review, photo, name, alt}) =>
-          <ReviewCol key={id}>
+          <div className='col' key={id}>
             <IoStarSharp style={{fontSize: '180%'}}/>
           <blockquote>
             {review}
@@ -47,9 +46,9 @@ const SectionTestimonials = () => {
             <img className={classes.photoImg} src={photo} alt={alt} />
             {name}
           </cite>
-        </ReviewCol>
+        </div>
         )}
-      </FlexDiv>
+      </div>
     </section>
   );
 };

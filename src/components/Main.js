@@ -14,7 +14,7 @@ const MainContent = () => {
       <SectionSteps />
       <SectionCities />
       <SectionTestimonials />
-      <SectionPlans />
+      <SectionPlans/>
       <SectionFormV2 />
     </main>
   );
