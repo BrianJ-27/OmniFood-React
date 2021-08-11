@@ -1,0 +1,132 @@
+// **************************************
+// TYPOGRAPHY STYLES
+// **************************************
+
+//h1 styles
+.title__primary{
+    @include text-prop($size:1.28em, $f-weight:400, $color:$color-text-light);
+    @extend %text-modules;
+    @include mq('md'){
+        @include text-prop($size:1.8em, $f-weight:500);
+    }
+    @include mq('lg'){
+        @include text-prop($size:1.1em);
+        text-align: center;
+    }
+}
+
+//h2 styles
+.title__secondary{
+    @include text-prop($size:1.8em, $f-weight:500, $color:$color-main-lightest);
+    @extend %text-modules;
+    text-align: center;
+    &::after{
+        content: "\003e";
+        @extend %psuedo-sec-title;
+        padding-left: .2em;
+    }
+    &::before{
+        content: "\003c";
+        @extend %psuedo-sec-title;
+        padding-right: .2em;
+        
+    }
+    @include mq('md'){
+        @include text-prop($size:1.3em, $l-height: 1.5);
+    }
+    @include mq('lg'){
+        @include text-prop($size:1.6em,);
+    }
+}
+
+//h3 Styles
+
+.title__tertiary{
+    @include text-prop($size: 1.4em, $color: $color-text-light);
+    text-align: center;
+    margin: 1em 0 .8em 0;
+    width: 100%;
+}
+
+/*----CONTEXT STYLES----*/
+
+.content__banner{
+    padding: 0 0 .5em .5em;
+    @include text-prop($size:1em, $f-weight:800, $color: $color-text-light);
+    text-align: center;
+    @include mq('md'){
+        @include text-prop($size:1.4em, $f-weight:bold);
+    }
+    @include mq('lg'){
+        @include text-prop($size:1.8em, $f-weight:900);
+    }
+}
+
+
+// Content in the About Me Section 
+.bio__text{
+    @include mq ('md') {
+        border-left: 2px solid $white;
+    }
+}
+
+// Styles for project title & content tags
+.title__overlay{
+    margin-top: .6em;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.review__name{
+    @include text-prop($size:1.5em, $f-weight:600);   
+    color: $color-main;
+}
+
+.review__text {
+    color: $color-text-base;
+}
+
+.review__title,
+.review__company{
+    @include text-prop($size:1em, $f-weight:700, $l-height:1);
+}
+
+
+
+.card-title{
+    @include text-prop($size:1.1em, $f-weight:600);
+    padding: .5em 0;
+    background: #024873;
+    color: #fff;
+}
+
+.card-text{
+    padding: 0.8em 1.5em;
+    @include text-prop($size:1.1em, $f-weight:500, $color: $color-text-dark);
+}
+
+//overlay title styles
+.title__overlay{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: $color-text-dark;
+    text-align: center;
+    font-weight: bolder;
+}
+
+//contact title styles
+.contact__title{
+    text-align: center;
+}
+
+.social__name{
+    margin-top: -1em;
+    color: $color-text-dark;
+}
+
+//styles for footer content
+.footer__text{
+    text-transform: uppercase;
+}

@@ -1,59 +1,47 @@
-import { makeStyles } from "@material-ui/core/styles";
 import logo from "../../img/logo-white.png";
-import { Wrapper, FlexDiv } from "../breakpoints";
-import { MainNav, NavListItem, NavLinks } from "./navStyles";
+import { makeStyles } from "@material-ui/core/styles";
+import { FlexMe } from "../../theme";
 
-const useNavStyles = makeStyles({
-  mainNavLi: {
-    marginRight: "1em",
-  },
-  navLinks: {
-    color: "#fff",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    fontSize: "1.2em",
-    fontWeight: "300",
-    letterSpacing: ".5px",
-  },
-});
+
+
+
+const useNavStyles = makeStyles((theme) => ({
+    logoSize: {
+      width: '110px',
+      [theme.breakpoints.up('tablet')]: {
+        width: '150px',
+      },
+      [theme.breakpoints.up('desktop')]: {
+        width: '170px',
+      },
+    },
+}));
+
 
 const MainNavigation = () => {
-
   const classes = useNavStyles();
 
   return (
-    <nav>
-      <Wrapper>
-        <FlexDiv>
-          <img src={logo} alt="Omnifood logo" style={{ width: "100px" }} />
-          <ul>
-            <NavListItem >
-              <NavLinks className={classes.navLinks} href="#features">
-                Food Delivery
-              </NavLinks>
-            </NavListItem>
-            <NavListItem>
-              <NavLinks className={classes.navLinks} href="#works">
-                How it Works
-              </NavLinks>
-            </NavListItem>
-            <NavListItem>
-              <NavLinks href="#cities">
-                Our Cities
-              </NavLinks>
-            </NavListItem>
-            <NavListItem>
-              <NavLinks className={classes.navLinks} href="#plans">
-                Sign Up
-              </NavLinks>
-            </NavListItem>
-          </ul>
-          {/* <a href="#icon" className="mobile-nav-icon js--nav-icon">
+      <nav className={FlexMe.flexRow}>
+        <img src={logo} alt="Omnifood logo" className={classes.logoSize} />
+        <ul className="flex_container">
+          <li>
+            <a href="#features">Food Delivery</a>
+          </li>
+          <li>
+            <a href="#works">How it Works</a>
+          </li>
+          <li>
+            <a href="#cities">Our Cities</a>
+          </li>
+          <li>
+            <a href="#plans">Sign Up</a>
+          </li>
+        </ul>
+        {/* <a href="#icon" className="mobile-nav-icon js--nav-icon">
                     icon here -{" "}
                 </a> */}
-        </FlexDiv>
-      </Wrapper>
-    </nav>
+      </nav>
   );
 };
 
