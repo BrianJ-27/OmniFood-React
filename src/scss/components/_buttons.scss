@@ -1,0 +1,31 @@
+// **************************************
+// BUTTON STYLES
+// **************************************
+
+//button styles for project card overlay
+.btn__overlay{
+    text-align: center;
+    @extend %btn-properties;
+    transition: background .4s ease-in;
+    margin-bottom: 10px;
+    &:hover{
+        background: $color-main;
+        text-decoration: none;
+        color: $white;
+    }
+    @include mq ('md'){
+        width: 40%;
+    }
+}
+
+.btn__overlay:nth-child(1){
+    @include mq ('md'){
+        margin-left: .5em;
+    }  
+}
+.btn__overlay:nth-child(2){
+    @include mq ('md'){
+        margin-right: .5em;
+    } 
+}
+
