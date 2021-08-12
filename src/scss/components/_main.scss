@@ -2,40 +2,52 @@
 // MAIN PAGE STYLES
 // **************************************
 
-/*-------Feature Section Class Styles----------*/
+/*-------Feature Section Styles----------*/
 .feature__heading {
   display: none;
-  @include mq ('md') {
+  @include mq("md") {
     display: inline;
   }
 }
 
 .long__copy {
-  @include mq ('md') {
+  @include mq("md") {
     width: 60%;
     margin: 0em auto 3em auto;
-  } 
+  }
 }
 
+/*-------Meal Image Section Styles----------*/
 
-/*-------About Me Section Class Styles----------*/
+.img__container--meals {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  font-size: 0;
+}
 
+.img__figure--meal {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
 
+.container__meal--col {
+  @include mq ('md') {
+    width: 50%;
+  }
+  @include mq ('lg') {
+    width: 25%;
+  }
+  
+}
 
 /*-------Skills Section Class Styles----------*/
 
-
-
 /*-------Experience Section Class Styles----------*/
-
-
 
 /*-------References Section Class Styles----------*/
 
-
-
-
 /*-------Lets Get Connected Section Class Styles----------*/
-
-
-
