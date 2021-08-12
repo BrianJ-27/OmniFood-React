@@ -3,7 +3,8 @@
 // **************************************
 
 /*-------Feature Section Styles----------*/
-.feature__heading {
+.feature__heading,
+.steps__heading {
   display: none;
   @include mq("md") {
     display: inline;
@@ -35,17 +36,80 @@
 }
 
 .container__meal--col {
-  @include mq ('md') {
+  @include mq("md") {
     width: 50%;
   }
-  @include mq ('lg') {
+  @include mq("lg") {
     width: 25%;
   }
-  
 }
 
-/*-------Skills Section Class Styles----------*/
+/*-------Step Section Styles----------*/
+.flex__container__steps {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include mq ('md') {
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include mq ('lg') {
+    justify-content: space-between;
+  }
+}
 
+.container__phone {
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include mq ('md') {
+    flex-basis: 45%;
+  }
+  @include mq ('lg') {
+    flex-basis: 50%;
+  }
+}
+
+.container__section--preview{
+  @include mq ('md') {
+    flex-basis: 45%;
+  }
+  @include mq ('lg') {
+    flex-basis: 50%;
+  }
+}
+
+
+.container__steps {
+  padding: 1em;
+  text-align: center;
+  p {
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+
+.container__steps--num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #17cf45;
+  border: 2px solid #17cf45;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 150%;
+  padding: 1.5em;
+  margin: 0 auto;
+}
+
+.container__apps--OS {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
 /*-------Experience Section Class Styles----------*/
 
 /*-------References Section Class Styles----------*/
