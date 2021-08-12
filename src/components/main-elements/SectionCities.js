@@ -26,9 +26,9 @@ const SectionCities = () => {
       <div className="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div className='flex_container'>
+      <div className='flex__container--city'>
         {citiInfo.map(({ id, img, city, review1, review2, link }) => (
-          <div key={id}>
+          <div key={id} className='col'>
             <img src={img} alt="Lisbon" />
             <h3>{city}</h3>
             <div className="city-feature">

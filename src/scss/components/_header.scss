@@ -2,144 +2,15 @@
 // HEADER STYLES
 // **************************************
 
-.header__container{
-  @include flex_me($vertAlign:center, $just:center, $wrap:wrap);
-  height: $header-height;
-  max-height: $header-height;
-  position: relative;
-  width: 100%;
-}
-
-/*---Container is the header bar that holds the nav menu & resume container --*/
-.header__bar--container{
-  width: 100%;
-  height: 80px;
-  background: rgba($color-bg, .6);
-  position: fixed;
-  top: 0;
-  z-index: 5;
-  @include flex_me($just:space-between, $vertAlign:center);
-  box-shadow: 0 8px 7px -3px #dbdbdb;
-  transition: background .6s ease-out;
-}
-
-/*---Added styles for when user scrolls down about 520px from the top of page --*/
-div#my-hdr-bar.header__bar--container.onscroll{
-  background: $color-main;
-  transition: background .6s ease;
-}
-
-/*---Container That holds the hamburger menu--*/
-.header__btn--menu{
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transition: all .5s ease-in;
-  position: relative;
-  // border: 3px solid $white; // Optional Border styles
-  // border-radius: 100% 0% 55% 45% / 56% 0% 100% 44%; // Optional Border styles
-  &:after{
-      content: "Menu";
-      font-size: 1.2em;
-      color: white;
-      border-bottom: 2px dotted #fff;
-      position: relative;
-    left: 100%;
-    top: 25%;
- }
-}
-
-/*-Styles to start Creating the hamburger lines for the menu-*/
-.menu__btn--burger{
-  width: 20px;
-  height: 3px;
-  background: $white;
-  border-radius: 5px;
-  transition: all .5s ease-in-out;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.menu__btn--burger::before,
-.menu__btn--burger::after{
-  content: '';
-  width: 25px;
-  height: 3px;
-  background: $white;
-  border-radius: 5px;
-  position: absolute;
-  transition: all .5s ease-in-out;
-}
-
-.menu__btn--burger:before{
-  transform: translateY(-8px);
-
-}
-
-.menu__btn--burger:after{
-  transform: translateY(8px);
-}
-/*-The end of the styles Creating the hamburger lines for the menu-*/
-
-
-/*-Styles for resume button container in header bar-*/
-.header__btn--resume{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 1.5em;
-}
-
-/*-Styles for resume button in header bar-*/
-.btn--resume{
-  outline: none;
-  border-color: $white;
-  color: $white;
-  background: transparent;
-  border-radius: 20px 0 20px; 
-  transition: background .4s ease-in-out;
-  &:hover{
-    background: $white;
-    color: $color-main;
-  }
-}
-/*-Styles for resume button link in header bar (a tag nested within btn tag)-*/
-.link--resume{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white;
-  transition: color .4s ease-in-out;
-  &:hover{
-    color: $color-main;
-    text-decoration: none;
-  }
-}
-
-.header__title--container{
-  position: absolute;
-  top: 20%;
-  @include mq ('md'){
-    top: 15%;
-  }
-}
-
-.header__title{
-  font-size: 3em;
-  @include mq ('md'){
-    font-size: 3.5em;
-  }
-}
-
-.sub__title{
-  font-size: 1.7em;
+.hero__btn--container{
   text-align: center;
-  @include mq ('md'){
-    font-size: 2em;
+  @include mq ('lg') {
+    text-align: left;
   }
 }
 
-.header__title,
-.sub__title{
-  color: $white;
-}
+
+
+
+
+

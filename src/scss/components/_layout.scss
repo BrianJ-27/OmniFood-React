@@ -5,81 +5,35 @@
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 //flex styles
-.flex__container{
-  @include flex_me($dir:column, $wrap:wrap);
-  &--bio, &--skills, &--references, &--contact {
-    @include flex_me($dir:column, $wrap:wrap, $just:center, $vertAlign:center);
-    @include mq('md'){
-      @include flex_me($dir:row, $just:space-around);
-      
-    };
-  }
-
-  &--reviews{
-    @include flex_me($wrap:wrap, $just:center, $vertAlign:center);
-  } 
-
-
-  &--cards{
-    @include flex_me($wrap:wrap, $just:center, $vertAlign:center);
-  }
- &--bio {
-   @include mq('md'){
-     margin: 1em;
-   }
- }
-
- &--references {
-   justify-content: space-around;
-   width: 100%;
- }
-
-}
-
-.img__title--container{
-    padding: 1em;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-}
-
-.smoke__container{
-  width: 100%;
-  @include flex_me($just:space-between, $vertAlign:center);
-  position: absolute;
-  bottom: -100px;
-  z-index: 0;
-}
-
-
-/*------GRID LAYOUT STYLES-----------*/
-.main__grid--container {
-  overflow: hidden;
-  z-index: 11;
-}
-
-.grid__container{
-  display: grid;
-  max-width: 350px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
-  margin: 10px;
-}
-
-//Layed out card with CSS Grid 
-.grid__row--card{
-    display: grid;
-    min-height: 100%;
-    grid-template-columns: 100%; 
-    grid-gap: 1em;
-    grid-template-rows: auto auto 1fr auto;
-    @include mq('md'){
-        grid-template-columns: repeat(2, 1fr); 
-  } 
+.flex__container,
+.flex__container--nav {
+  @include flex_me($dir: column, $wrap: wrap, $vertAlign: center);
   @include mq('lg'){
-    grid-template-columns: repeat(3, 1fr); 
- }   
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &--hero-box {
+    align-items: center;
+    justify-content: center;
+    @include mq('lg'){
+      flex-direction: column;
+    }
+  }
+  &--city {
+    width: 100%;
+  }
 }
 
+/*------WRAPPER STYLES-----------*/
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2em;
+  @include mq('lg'){
+    padding: 0 4em;
+  }
+}
+
+.col {
+  width: inherit;
+}

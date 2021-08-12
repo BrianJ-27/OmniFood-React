@@ -3,29 +3,17 @@
 // **************************************
 
 //button styles for project card overlay
-.btn__overlay{
-    text-align: center;
+.btn__full {
+    background: #17cf45;
     @extend %btn-properties;
-    transition: background .4s ease-in;
-    margin-bottom: 10px;
-    &:hover{
-        background: $color-main;
-        text-decoration: none;
-        color: $white;
-    }
-    @include mq ('md'){
-        width: 40%;
-    }
 }
 
-.btn__overlay:nth-child(1){
-    @include mq ('md'){
-        margin-left: .5em;
-    }  
+.btn__outline {
+    background: transparent;
+    border: 1px solid #17cf45;
+    color: #17cf45;
+    @extend %btn-properties
 }
-.btn__overlay:nth-child(2){
-    @include mq ('md'){
-        margin-right: .5em;
-    } 
-}
+
+
 

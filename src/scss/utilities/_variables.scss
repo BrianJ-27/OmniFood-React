@@ -26,14 +26,10 @@ $apricot: #EB9373;
 $burnt-orange: #DA6304;
 $bean: #3D0C02;
 $bubblegum: #EEC1BE;
+$greenbeen: #17cf45;
 
 /*-----Project Color Variables-----*/
-$calm-blue: #024873; 
-$sophisticated-teal: #025E73; 
-$mellow-skyblue: #80B4BF;
-$serene-midnight: #0D0D0D; 
-$relaxed-silver: #B8BCBF; 
-$white: #fff;
+$greenbeen: #a7d1b2;
 
 /*-----Functional Color Variables-----*/
 $color-main: $calm-blue;
@@ -42,9 +38,9 @@ $color-main-light: lighten($color-main, 3%);
 $color-main-lightest: lighten($color-main, 50%);
 $color-main-dark: darken($color-main, 15%);
 $color-main-darkest: darken($color-main, 25%);
-$color-secondary: $relaxed-silver;
-$color-accent: $sophisticated-teal;
+$color-accent: $greenbeen;
 $color-accent-light: lighten($color-accent, 35%);
+$color-accent-dark: darken($color-main, 15%);
 
 //background colors
 $color-bg: $serene-midnight;
@@ -58,8 +54,8 @@ $color-bg-header: $serene-midnight;
 //Link colors
 $color-link-default: $white;
 $color-link-active: $silver-surfer;
-$color-link-hover: $sophisticated-teal;
-$color-link-visited: $silver-surfer;
+$color-link-hover: $color-accent;
+$color-link-visited: $color-accent-dark;
 
 //Border Colors
 $color-border-light: $color-accent;

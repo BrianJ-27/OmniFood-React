@@ -2,223 +2,23 @@
 // IMAGE STYLES
 // **************************************
 
-.img__header--container{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include flex_me($just:center);
-    width: 100%;
-    height: 100%;
-    position: relative;
+.logo__img {
+  width: 140px;
+  height: auto;
+  @include mq("md") {
+    width: 130px;
+  }
 }
 
-.bio__img--wrapper{
-    background: $color-secondary;
-    border-radius: 100% 0% 55% 45% / 56% 0% 100% 44% ;
-    @include mq('md'){
-        flex-basis: 48%; 
-    }
- }
-
-
-
-.img__bio{
-    height: 200px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-    @include mq('md'){
-        height: 250px;
-    }
-}
-
-.my__face--container{
-    width: 85%;
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-    bottom: 0;
-    height: 350px;
-    background: rgba(0,0,0,0.7);
-    border-radius: 80% 45% 0% 0%;
-    @include mq('md'){
-        width: 65%;
-     } 
-    @include mq ('lg'){
-      width: 45%;
-    }
-}
-
-.my__face {
-   width: 300px;
-   position: absolute;
-   bottom: 0;
-   animation: face .8s linear;
-   @include mq('md'){
-    width: 400px;
- } 
-}
-
-@keyframes face {
-    0% {
-        transform: scale(0) rotateX(90deg);
-        opacity: 0;
-    }
-    30% {
-        
-        opacity: .3;
-    
-    } 
-    50% {
-        
-        opacity: .5;
-    
-    } 
-    100% {
-        transform: scale(1) ;
-        opacity: 1;
-    } 
-}
-
-.logo__img--container{
-    @include flex_me($vertAlign:center);
-}
-
-.logo__img{
-    width: 50px;
-    height: auto;
-    @include mq ('lg'){
-        width: 65px;
-    }
-}
-.smoke__img{
-    width: 60px;
-    animation: smokey 2.5s linear infinite;
-    z-index: 1;
-}
-.smoke__img:nth-child(1){
-    animation-delay: 2s;
-    width: 100px;
-}
-.smoke__img:nth-child(2){
-    animation-delay: 6s;
-   
-}
-.smoke__img:nth-child(3){
-    animation-delay: 1s;
-    width: 35px;
-}
-.smoke__img:nth-child(4){
-    animation-delay: 3s;
-}
-.smoke__img:nth-child(5){
-    animation-delay: 7s;
-    width: 25px;
-}
-.smoke__img:nth-child(6){
-    animation-delay: 2s;
-}
-.smoke__img:nth-child(7){
-    animation-delay: 5s;
-    width: 70px;
-}
-
-@keyframes smokey {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    30% {
-        
-        opacity: 1;
-    
-    }
-    50% {
-        
-        opacity: 1;
-    }
-    70% {
-        
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-75vh);
-        opacity: 0;
-    }
-}
-
-//styled the image with the background image to ensure it doesn't stretch on all screen sizes
-
-
-.img__skill--container{
-    width: 100px;
-    @include flex_me($dir:column, $vertAlign:center);
-    max-height: 150px;
-}
-
-
-Project Card Images
-.card-img-top{
-    height: auto;
-}
-
-//Avatar image styling for reviews 
-.img__person{
-    @include roundy($dim:125px, $border: 1px solid $color-border-dark);
-    z-index: 2;
-    
-}
-
-.skill-icons{
-    fill: white;
-    color: white;
-}
-
-.card__icons--css,
-.card__icons--scss,
-.card__icons--js,
-.card__icons--php7,
-.card__icons--wordpress{
-    width: 40px;
-    margin: 0 .5em;
-    @include mq('md'){
-        width: 60px; 
-    }
-}
-
-.card__icons--js{
-    fill: rgb(161, 161, 3);
-    color:rgb(161, 161, 3);
-   
-}
-.card__icons--scss{
-    fill: rgb(207, 93, 188);
-    color:rgb(207, 93, 188);
-   
-}
-.card__icons--css{
-    fill: rgb(52, 49, 204);
-    color:rgb(52, 49, 204);
-   
-}
-.card__icons--html5{
-    fill: rgb(219, 42, 19);
-    color:rgb(219, 42, 19); 
-}
-.card__icons--php7{
-    fill: rgb(0, 0, 0);
-    color:rgb(0, 0, 0); 
-}
-.card__icons--wordpress{
-    fill: rgb(105, 105, 105);
-    color:rgb(105, 105, 105); 
+//Avatar image styling for reviews
+.img__person {
+  @include roundy($dim: 125px, $border: 1px solid $color-border-dark);
+  z-index: 2;
 }
 
 // Styling for social media icons
-.footer__icons{
-    width: 100px;
-    height: 100px;
-    padding: 1em;
+.footer__icons {
+  width: 100px;
+  height: 100px;
+  padding: 1em;
 }
-
-

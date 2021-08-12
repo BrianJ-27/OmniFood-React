@@ -1,6 +1,5 @@
 import mealData from '../../data'
 import { makeStyles } from '@material-ui/core/styles';
-import { MealCol }  from '../../theme';
 
 const useMealPicStyles = makeStyles({
     imgContainer: {
@@ -36,11 +35,11 @@ const SectionMeals = () => {
         <section className="section-meals">
             <div className={classes.imgContainer}>
                 {mealpicData.map(({id, pic, alt}) => 
-                <MealCol component='section' key={id} >
+                <div component='section' key={id} >
                     <figure className={classes.mealPhotoFigure}>
                         <img className={classes.img} src={pic} alt={alt} />
                     </figure> 
-                </MealCol>
+                </div>
                 )} 
             </div>
         </section>

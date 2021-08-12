@@ -1,41 +1,23 @@
 import logo from "../../img/logo-white.png";
-import { makeStyles } from "@material-ui/core/styles";
-import { FlexMe } from "../../theme";
-
-
-
-
-const useNavStyles = makeStyles((theme) => ({
-    logoSize: {
-      width: '110px',
-      [theme.breakpoints.up('tablet')]: {
-        width: '150px',
-      },
-      [theme.breakpoints.up('desktop')]: {
-        width: '170px',
-      },
-    },
-}));
 
 
 const MainNavigation = () => {
-  const classes = useNavStyles();
 
   return (
-      <nav className={FlexMe.flexRow}>
-        <img src={logo} alt="Omnifood logo" className={classes.logoSize} />
-        <ul className="flex_container">
-          <li>
-            <a href="#features">Food Delivery</a>
+      <nav className="flex__container">
+        <img src={logo} alt="Omnifood logo" className='logo__img' />
+        <ul className="flex__container--nav nav__wrapper">
+          <li className="nav__item">
+            <a href="#features" className="nav__link">Food Delivery</a>
           </li>
-          <li>
-            <a href="#works">How it Works</a>
+          <li className="nav__item">
+            <a href="#works" className="nav__link">How it Works</a>
           </li>
-          <li>
-            <a href="#cities">Our Cities</a>
+          <li className="nav__item">
+            <a href="#cities" className="nav__link">Our Cities</a>
           </li>
-          <li>
-            <a href="#plans">Sign Up</a>
+          <li className="nav__item">
+            <a href="#plans" className="nav__link">Sign Up</a>
           </li>
         </ul>
         {/* <a href="#icon" className="mobile-nav-icon js--nav-icon">

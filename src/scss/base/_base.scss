@@ -3,102 +3,54 @@
 // **************************************
 
 /*--------BASE ELEMENT STYLES--------*/
-*{
-    box-sizing: border-box;
-    // background: #000 !important;
-    // color: #0f0 !important;
-    // outline: solid #f00 1px !important;
+* {
+  box-sizing: border-box;
+  // background: #000 !important;
+  // color: #0f0 !important;
+  // outline: solid #f00 1px !important;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5){
+body {
+  font-family: $font-stack-montserrat;
+  transition: 0.5s;
+}
 
-  html,
-  body{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+section {
+  padding: 60px 0;
+  &:nth-child(2) {
+    padding-bottom: 0;
   }
-
 }
-
-body{
-    font-family: $font-stack-montserrat;
-    transition: .5s;
-}
-
-main{
-    background: $color-bg;
-}
-
-section{
-    padding: 60px 0;
-    &:nth-child(2){
-        padding-bottom: 0;
-    }
-}
-
-details {
-    color: $white;
-    transition: .7s;
-    font-size: 1.7em;
-}
-
-::marker{
-  display:none !important;
-}
-
-figure {
-    background-color: transparent;
-}
-
-figcaption{
-    color: white;
-}
-
-svg{
-    width: 80px;
-    max-width: 250px;
-    max-height: 65px;
-    @include mq ('md'){
-        max-height: 95px;
-    }
-}
-
 
 p {
-    font-size: 113%;
-    line-height: 145%;
-  }
-
-a{
-    display: inline-block;
-    padding: .6em; 
-    text-decoration: none;  
+  font-size: 113%;
+  line-height: 145%;
 }
 
-footer{
-    height: $footer-height;
-    background: $color-bg-darkest;
-    color: $color-text-light;
+header {
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0.7) 90%
+    ),
+    url("../../img/hero-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3px 5px 2px rgba(105, 255, 125, 0.534);
+  padding: 2.5em 0 8em 0;
 }
 
-/*-----HEADINGS------*/    
-h1,
-h2,
-h3,
-h4,
-h6,
-summary{
-    font-family: $font-stack-bangers;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
+img {
+ width: inherit;
 }
+
+footer {
+  height: $footer-height;
+  background: $color-bg-darkest;
+  color: $color-text-light;
+}
+
+/*-----HEADINGS------*/
 
 h1,
 h2,
@@ -124,7 +76,7 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #17cf45;
+  background-color: $color-accent;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -134,7 +86,3 @@ h2:after {
 h3 {
   font-size: 120%;
 }
-
-
-
-

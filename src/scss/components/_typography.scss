@@ -4,14 +4,15 @@
 
 //h1 styles
 .title__primary{
-    @include text-prop($size:1.28em, $f-weight:400, $color:$color-text-light);
+    @include text-prop($size: 1.8em, $f-weight:500, $color:$color-text-light);
     @extend %text-modules;
+    text-align: center;
     @include mq('md'){
-        @include text-prop($size:1.8em, $f-weight:500);
+        @include text-prop($size:1.9em, $f-weight:500);
     }
     @include mq('lg'){
-        @include text-prop($size:1.1em);
-        text-align: center;
+        @include text-prop($size:2em);
+        text-align: left;
     }
 }
 
