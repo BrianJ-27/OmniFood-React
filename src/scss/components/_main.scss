@@ -45,6 +45,7 @@
 }
 
 /*-------Step Section Styles----------*/
+
 .flex__container__steps {
   display: flex;
   flex-direction: column;
@@ -110,8 +111,24 @@
   width: 100%;
   justify-content: center;
 }
-/*-------Experience Section Class Styles----------*/
+/*-------Testimonial Section Styles----------*/
+.testimonial {
+  @include mq('md') {
+    justify-content: center;
+  }
+  @include mq('lg') {
+    justify-content: space-between;
+  }
+  
+}
+.reviews {
+  color: $white;
+}
 
-/*-------References Section Class Styles----------*/
+.review {
+  align-self: flex-end;
+}
 
-/*-------Lets Get Connected Section Class Styles----------*/
+/*-------Plan Section  Styles----------*/
+
+/*-------Form Section Class Styles----------*/

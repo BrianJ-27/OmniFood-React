@@ -1,15 +1,8 @@
 import { testimonialData } from "../../data";
-import bgImg from '../../img/back-customers.jpg'
 import { IoStarSharp } from "react-icons/io5";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useTestimonialStyles = makeStyles({
-  sectionTestimonial: {
-    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('+ bgImg +')',
-    backgroundSize: 'cover',
-    color: '#fff',
-    backgroundAttachment: 'fixed'
-  },
   flexRow: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -31,23 +24,25 @@ const SectionTestimonials = () => {
   const classes = useTestimonialStyles();
 
   return (
-    <section className={classes.sectionTestimonial}>
+    <section className="testimonial__bg">
+      <div className="wrapper">
       <div className="row">
-        <h2>Our customers can't live without us</h2>
+        <h2 className="title__secondary reviews">Our customers can't live without us</h2>
       </div>
-      <div className='flex_container'>
+      <div className='flex__container testimonial'>
         {testimonialData.map(({id, review, photo, name, alt}) =>
-          <div className='col' key={id}>
+          <div className='grid__col--4' key={id}>
             <IoStarSharp style={{fontSize: '180%'}}/>
           <blockquote>
             {review}
           </blockquote>
-          <cite style={{fontSize: '120%', fontWeight: 'bold'}}>
+          <cite className="review" style={{fontSize: '120%', fontWeight: 'bold'}}>
             <img className={classes.photoImg} src={photo} alt={alt} />
             {name}
           </cite>
         </div>
         )}
+      </div>
       </div>
     </section>
   );
