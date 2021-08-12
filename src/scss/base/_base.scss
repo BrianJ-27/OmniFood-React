@@ -23,7 +23,7 @@ section {
 }
 
 p {
-  font-size: 113%;
+  font-size: .95em;
   line-height: 145%;
 }
 
@@ -66,11 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 90%;
-  word-spacing: 2px;
-  text-align: center;
   margin-bottom: 30px;
-  letter-spacing: 1px;
 }
 
 h2:after {
@@ -84,5 +80,5 @@ h2:after {
 }
 
 h3 {
-  font-size: 120%;
+  font-size: 1em;
 }

@@ -20,6 +20,12 @@
   @extend %nav-link;
   color: $color-link-default;
   font-size: 1.2em;
+  @include mq('md') {
+    font-size: .9em;
+  }
+  @include mq('lg') {
+    font-size: 1.1em;
+  }
 }
 
 // main nav SVG icons to the left of the links

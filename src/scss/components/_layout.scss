@@ -5,19 +5,12 @@
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 //flex styles
-.flex__container,
-.flex__container--nav {
+.flex__container {
   @include flex_me($dir: column, $wrap: wrap, $vertAlign: center);
-  @include mq('lg'){
+  @include mq('md'){
     flex-direction: row;
     justify-content: space-between;
-  }
-  &--hero-box {
-    align-items: center;
-    justify-content: center;
-    @include mq('lg'){
-      flex-direction: column;
-    }
+    align-items: flex-start;
   }
   &--city {
     width: 100%;
@@ -36,4 +29,58 @@
 
 .col {
   width: inherit;
+}
+
+// grid base layout styles
+.grid {
+
+  // .grid__row
+  &__row {
+    padding: 1em 10px;
+    @include flex_me(column);
+
+    // NOTE: replace with media query mixin if aiming for exceeds
+    @include mq('md'){
+      flex-direction: row;
+    }
+  }
+
+  // .grid__col
+  &__col {
+
+    // create grid columns dynamically
+    // loop through each column size
+    @for $i from 1 through 12 {
+
+      // concatenate CSS selector, ie when $i = 1,
+      // selector would be .grid__col--1
+      &--#{$i} {
+
+        // base styles applied to all grid columns
+        // NOTE: could be converted to a placeholder, along with margin
+        // from the  media query
+        margin-top: 10px;
+        flex-basis: 100%;
+
+        // NOTE: replace with media query mixin if aiming for exceeds
+        @include mq('md'){
+
+          // base stlyes applied to all grid columns
+          margin-top: 0;
+
+          // make column width a percentage of the column number / total columns
+          flex-basis: #{$i / 6.5 * 100 + "%"};
+        }
+        // NOTE: replace with media query mixin if aiming for exceeds
+        @include mq('lg') {
+
+          // base stlyes applied to all grid columns
+          margin-top: 0;
+
+          // make column width a percentage of the column number / total columns
+          flex-basis: #{$i / 13 * 100 + "%"};
+        }
+      }
+    }
+  }
 }

@@ -2,12 +2,14 @@
 // HEADER STYLES
 // **************************************
 
-.hero__btn--container{
+.hero__box--container{
   text-align: center;
-  @include mq ('lg') {
+  @include mq ('md') {
     text-align: left;
   }
 }
+
+
 
 
 

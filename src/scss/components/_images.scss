@@ -6,7 +6,7 @@
   width: 140px;
   height: auto;
   @include mq("md") {
-    width: 130px;
+    width: 110px;
   }
 }
 
@@ -16,9 +16,8 @@
   z-index: 2;
 }
 
-// Styling for social media icons
-.footer__icons {
-  width: 100px;
-  height: 100px;
-  padding: 1em;
+
+.icon__feature{
+  color: $color-accent;
+  font-size: 4em;
 }

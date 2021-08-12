@@ -2,85 +2,37 @@
 // MAIN PAGE STYLES
 // **************************************
 
-/*-------Banner Section Class Styles----------*/
-
-
-//style for the "Brian" word on banner image
-.content__name{
-  color: $color-accent;
-}
-/*-------About Me Section Class Styles----------*/
-
-#about__me{
-  height: 100%;
-}
-
-
-.bio__content{
-  @include mq('md'){
-    
+/*-------Feature Section Class Styles----------*/
+.feature__heading {
+  display: none;
+  @include mq ('md') {
+    display: inline;
   }
 }
 
+.long__copy {
+  @include mq ('md') {
+    width: 60%;
+    margin: 0em auto 3em auto;
+  } 
+}
+
+
+/*-------About Me Section Class Styles----------*/
+
+
 
 /*-------Skills Section Class Styles----------*/
-#skills{
-  padding: 0 1em;
-}
+
 
 
 /*-------Experience Section Class Styles----------*/
 
 
-.portfolio-title,
-.contact{
-  color: $color-text-light;
-}
-
-Project Card Styles
-.card{
-  position: relative;
-  width: 200px;
-  height: auto;
-  @include mq('md'){
-    width: 300px;
-  }
-  @include mq('lg'){
-    width: 40%;
-  }
-}
-
-
 
 /*-------References Section Class Styles----------*/
 
-.flex__container--reviews{
-  position: relative;
-  overflow: hidden;
-  height: 550px;
-  max-height: 550px;
-  background-color: $white;
-  margin-bottom: 1em;
-  @include mq ('md'){
-    width: 48%;
-  }
-  @include mq ('lg'){
-    width: 30%;
-  }
-  
-} 
-.flex__container--reviews::after{
-  content: "";
-    display: block;
-    width: 100%;
-    height: 130px;
-    position: absolute;
-    top: 0;
-    left: 0px;
-    background-color: #B8BCBF;
-    border-radius: 0 0 0% 100%;
-    z-index: 1;
-} 
+
 
 
 /*-------Lets Get Connected Section Class Styles----------*/

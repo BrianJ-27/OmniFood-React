@@ -6,7 +6,7 @@ const MainNavigation = () => {
   return (
       <nav className="flex__container">
         <img src={logo} alt="Omnifood logo" className='logo__img' />
-        <ul className="flex__container--nav nav__wrapper">
+        <ul className="flex__container nav__wrapper">
           <li className="nav__item">
             <a href="#features" className="nav__link">Food Delivery</a>
           </li>
