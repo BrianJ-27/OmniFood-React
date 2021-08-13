@@ -3,13 +3,19 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 const App = () => {
   return (
-    <>
+    <Router>
       <Header />
-      <Main />
+      <Switch>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
       <Footer />
-    </>
+    </Router>
   );
 };
 
