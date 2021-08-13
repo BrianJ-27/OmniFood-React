@@ -23,21 +23,21 @@ const SectionSteps = () => {
           <div className="container__section--preview">
             <div className="container__steps">
               <div className="container__steps--num">1</div>
-              <p>
+              <p className="content__base">
                 Choose the subscription plan that best fits your needs and sign
                 up today.
               </p>
             </div>
             <div className="container__steps">
               <div className="container__steps--num">2</div>
-              <p>
+              <p className="content__base">
                 Order your delicious meal using our mobile app or website. Or
                 you can even call us!
               </p>
             </div>
             <div className="container__steps">
               <div className="container__steps--num">3</div>
-              <p>
+              <p className="content__base">
                 Enjoy your meal after less than 20 minutes. See you the next
                 time!
               </p>

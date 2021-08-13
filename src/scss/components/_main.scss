@@ -86,8 +86,10 @@
   padding: 1em;
   text-align: center;
   p {
-    width: 70%;
-    margin: 1em auto;
+    @include mq ('md') {
+      width: 70%;
+      margin: 1em auto;
+    }
   }
 }
 
@@ -111,6 +113,12 @@
   width: 100%;
   justify-content: center;
 }
+
+
+.omni-city {
+  margin-bottom: 1.5em;
+}
+
 /*-------Testimonial Section Styles----------*/
 .testimonial {
   @include mq('md') {
@@ -126,9 +134,52 @@
 }
 
 .review {
-  align-self: flex-end;
+  margin: 1em 0;
 }
 
 /*-------Plan Section  Styles----------*/
 
+.container__planbox {
+  @include mq ('md') {
+    justify-content: center;
+  }
+  @include mq ('lg') {
+    justify-content: space-between;
+  }
+}
+
+.planbox {
+  background-color: $white;
+  margin-bottom: 2em;
+}
+
+.container__top--box {
+  padding: 1em;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.plan__price {
+  font-size: 300%;
+  margin-bottom: 5px;
+  font-weight: 100;
+  color: $color-accent;
+}
+
+.container__middle--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.container__bottom--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em;
+}
+
 /*-------Form Section Class Styles----------*/
+

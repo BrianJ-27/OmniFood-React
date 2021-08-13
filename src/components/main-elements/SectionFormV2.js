@@ -29,8 +29,9 @@ const SectionFormV2 = () => {
 
   return (
     <section className="section-form">
+      <div className="wrapper">
       <div className="row">
-        <h2>We're happy to hear from you</h2>
+        <h2 className="title__secondary">We're happy to hear from you</h2>
       </div>
       <div className="row">
         <form method="post" action="#" className="contact-form" onSubmit={handleSubmitForm}>
@@ -104,6 +105,7 @@ const SectionFormV2 = () => {
             </ul>
           </fieldset>
         </form>
+      </div>
       </div>
     </section>
   );

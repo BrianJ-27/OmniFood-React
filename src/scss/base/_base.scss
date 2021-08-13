@@ -20,7 +20,8 @@ section {
   &:nth-child(2) {
     padding-bottom: 0;
   }
-  &:nth-child(3) {
+  &:nth-child(3),
+  &:nth-child(6) {
     background: #f4f4f4;
   }
 }
@@ -28,6 +29,10 @@ section {
 p {
   font-size: .95em;
   line-height: 145%;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {

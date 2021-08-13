@@ -31,12 +31,12 @@ const SectionTestimonials = () => {
       </div>
       <div className='flex__container testimonial'>
         {testimonialData.map(({id, review, photo, name, alt}) =>
-          <div className='grid__col--4' key={id}>
+          <div className='grid__col--4 review' key={id}>
             <IoStarSharp style={{fontSize: '180%'}}/>
           <blockquote>
             {review}
           </blockquote>
-          <cite className="review" style={{fontSize: '120%', fontWeight: 'bold'}}>
+          <cite style={{fontSize: '120%', fontWeight: 'bold'}}>
             <img className={classes.photoImg} src={photo} alt={alt} />
             {name}
           </cite>

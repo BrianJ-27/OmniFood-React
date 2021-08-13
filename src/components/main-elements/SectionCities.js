@@ -12,14 +12,14 @@ const SectionCities = () => {
         </div>
         <div className="flex__container">
           {citiInfo.map(({ id, img, city, review1, review2, link }) => (
-            <div key={id} className="grid__col--3">
+            <div key={id} className="grid__col--3 omni-city">
               <img src={img} alt="Lisbon" />
               <h3 className="title__tertiary">{city}</h3>
-              <div className="city-feature">
+              <div className="city-feature content__base">
                 <IoPersonSharp className="icon__city" />
                 {review1}
               </div>
-              <div className="city-feature">
+              <div className="city-feature content__base">
                 <IoStarSharp className="icon__city" />
                 {review2}
               </div>

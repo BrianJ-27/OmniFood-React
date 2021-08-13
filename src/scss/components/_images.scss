@@ -48,7 +48,7 @@
 }
 
 .icon__city {
-  color: #17cf45;
+  color: $color-accent;
   display: inline-block;
   width: 30px;
   font-size: 120%;
@@ -62,6 +62,17 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../../img/back-customers.jpg");
   background-size: cover;
-  color: #fff;
+  color: $white;
   background-attachment: fixed;
+}
+
+.icon__checkmark {
+  color: $color-accent;
+  display: inline-block;
+  width: 30px;
+  font-size: 120%;
+  margin-right: -5px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
 }
