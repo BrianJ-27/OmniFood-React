@@ -183,3 +183,58 @@
 
 /*-------Form Section Class Styles----------*/
 
+fieldset {
+  border: none;
+}
+
+.inner-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+label {
+  margin: .5em 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.inner-flex:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .5em 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid $color-accent;
+}
+
+label[for="news"] {
+  width: 45%;
+}
+
+textarea {
+  margin-bottom: 1.5em;
+  height: 100px;
+}
+
+.input-container {
+  width: 45%;
+  margin: .5em 0;
+}
+
+[type="checkbox"] {
+  width: 10%;
+  margin: 5px;
+  // color: $color-accent;
+}

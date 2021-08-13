@@ -100,7 +100,7 @@ const SectionFormV2 = () => {
                 ></textarea>
               </li>
               <li className="submit-btn-container">
-                <input type="submit" value="Send it!" />
+                <input type="submit" value="Send it!"  className="btn__outline"/>
               </li>
             </ul>
           </fieldset>
