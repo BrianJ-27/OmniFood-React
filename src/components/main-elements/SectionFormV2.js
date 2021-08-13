@@ -99,7 +99,7 @@ const SectionFormV2 = () => {
                   onChange={e => handleUpdate('message', e)}
                 ></textarea>
               </li>
-              <li className="submit-btn-container">
+              <li className="submit__btn--container">
                 <input type="submit" value="Send it!"  className="btn__outline"/>
               </li>
             </ul>

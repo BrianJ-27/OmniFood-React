@@ -50,11 +50,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  @include mq ('md') {
+  @include mq("md") {
     flex-direction: row;
     justify-content: center;
   }
-  @include mq ('lg') {
+  @include mq("lg") {
     justify-content: space-between;
   }
 }
@@ -64,29 +64,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @include mq ('md') {
+  @include mq("md") {
     flex-basis: 45%;
   }
-  @include mq ('lg') {
+  @include mq("lg") {
     flex-basis: 50%;
   }
 }
 
-.container__section--preview{
-  @include mq ('md') {
+.container__section--preview {
+  @include mq("md") {
     flex-basis: 45%;
   }
-  @include mq ('lg') {
+  @include mq("lg") {
     flex-basis: 50%;
   }
 }
-
 
 .container__steps {
   padding: 1em;
   text-align: center;
   p {
-    @include mq ('md') {
+    @include mq("md") {
       width: 70%;
       margin: 1em auto;
     }
@@ -114,20 +113,18 @@
   justify-content: center;
 }
 
-
 .omni-city {
   margin-bottom: 1.5em;
 }
 
 /*-------Testimonial Section Styles----------*/
 .testimonial {
-  @include mq('md') {
+  @include mq("md") {
     justify-content: center;
   }
-  @include mq('lg') {
+  @include mq("lg") {
     justify-content: space-between;
   }
-  
 }
 .reviews {
   color: $white;
@@ -140,10 +137,10 @@
 /*-------Plan Section  Styles----------*/
 
 .container__planbox {
-  @include mq ('md') {
+  @include mq("md") {
     justify-content: center;
   }
-  @include mq ('lg') {
+  @include mq("lg") {
     justify-content: space-between;
   }
 }
@@ -187,14 +184,39 @@ fieldset {
   border: none;
 }
 
+form {
+  @include mq("md") {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include mq("lg") {
+    width: 65%;
+  }
+}
+
 .inner-flex {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  @include mq("md") {
+    flex-direction: row;
+    margin-bottom: 1em;
+  }
 }
 
 label {
-  margin: .5em 0;
+  margin: 0.5em 0;
+  @include mq("md") {
+    width: 25%;
+    font-size: 0.9em;
+  }
+}
+
+label[for="news"] {
+  width: 45%;
+  @include mq("md") {
+    width: 25%;
+  }
 }
 
 input,
@@ -204,23 +226,22 @@ textarea {
   padding: 7px;
   border-radius: 3px;
   border: 1px solid #ccc;
+  @include mq("md") {
+    width: 75%;
+  }
 }
 
 .inner-flex:nth-child(4) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   outline: 1px solid $color-accent;
-}
-
-label[for="news"] {
-  width: 45%;
 }
 
 textarea {
@@ -230,11 +251,21 @@ textarea {
 
 .input-container {
   width: 45%;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 [type="checkbox"] {
   width: 10%;
   margin: 5px;
-  // color: $color-accent;
+}
+
+.submit__btn--container {
+  @include mq("md") {
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+  @include mq("lg") {
+    width: 30%;
+  }
 }
