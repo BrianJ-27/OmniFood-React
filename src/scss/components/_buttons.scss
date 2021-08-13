@@ -3,26 +3,29 @@
 // **************************************
 
 //button styles for project card overlay
-.btn__full {
-    background: $color-accent;
+.btn__full,
+.btn__outline {
     @extend %btn-properties;
     transition: background-color .3s ease-in;
     &:hover {
-        background: $color-accent-dark;
-        transition: all .3s ease-out;
+        transition: background-color .3s ease-out;  
+    }
+}
+
+.btn__full {
+    background-color: $color-accent;
+    &:hover {
+        background-color: $color-accent-dark;
     }
 }
 
 .btn__outline {
-    background: transparent;
+    background-color: transparent;
     border: 1px solid $color-accent;
     color: $color-accent;
-    @extend %btn-properties;
-    transition: background-color .3s ease-in;
     &:hover {
-       background: $color-accent;
+       background-color: $color-accent;
        color: $white;
-       transition: all .3s ease-out;
     }
 }
 
