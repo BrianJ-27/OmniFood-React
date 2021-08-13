@@ -3,11 +3,49 @@
 // **************************************
 
 //footer layout style
-#footer{
-    @include flex_me($just:center, $vertAlign:center);
+.footer__col {
+    flex-basis: 100%;
+    margin: 1em 0;
+    @include mq ('md') {
+       flex-basis: 45%; 
+    }
+    @include mq ('md') {
+       flex-basis: 40%; 
+    }
 }
 
-//footer content styles
-#footer address{
-    text-transform: uppercase;
+.footer__nav,
+.footer__bar {
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 1em;
+    @include mq('md') {
+        font-size: 80%;
+    }
+    @include mq('lg') {
+        font-size: 100%;
+    }
 }
+
+.footer__nav {
+    @include mq ('md') {
+        @include flex_me($just:space-around);
+    }
+}
+
+.footer__item {
+    margin: .75em 0;
+}
+
+.footer__link {
+
+    transition: color .4s ease-in;
+    &:hover {
+        color: $color-accent;
+      transition: color .4s ease-out;
+    }
+}
+
+
+
+

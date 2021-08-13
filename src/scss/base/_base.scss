@@ -29,10 +29,12 @@ section {
 p {
   font-size: .95em;
   line-height: 145%;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: #888;
 }
 
 header {
@@ -53,9 +55,10 @@ img {
 }
 
 footer {
-  height: $footer-height;
-  background: $color-bg-darkest;
-  color: $color-text-light;
+  background: $color-bg-footer;
+  color: $color-text-light; 
+  font-size: 90%;
+  color: #888;
 }
 
 /*-----HEADINGS------*/

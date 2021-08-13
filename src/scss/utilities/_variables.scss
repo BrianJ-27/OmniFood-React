@@ -27,10 +27,11 @@ $burnt-orange: #DA6304;
 $bean: #3D0C02;
 $bubblegum: #EEC1BE;
 $greenbeen: #17cf45;
+$evening-grey: #333;
 
 /*-----Project Color Variables-----*/
 $greenbeen: #17cf45;
-
+$evening-grey: #333;
 /*-----Functional Color Variables-----*/
 $color-main: $calm-blue;
 $color-main-transparent: rgba($color-main, .5);
@@ -43,12 +44,12 @@ $color-accent-light: lighten($color-accent, 35%);
 $color-accent-dark: darken($color-accent, 10%);
 
 //background colors
-$color-bg: $serene-midnight;
+$color-bg: $evening-grey;
 $color-bg-dark: darken($color-bg, 20%);
 $color-bg-darkest: darken($color-bg, 40%);
 $color-bg-light: lighten($silver-surfer, 10%);
 $color-shadow: rgba($black, .5);
-$color-bg-footer: $serene-midnight;
+$color-bg-footer: $evening-grey;
 $color-bg-header: $serene-midnight;
 
 //Link colors
@@ -79,7 +80,7 @@ I won't be using these variables for this project
 $max-width: 1200px;
 $gutter: 15px;
 $header-height: 600px;
-$footer-height: 100px;
+$footer-height: 150px;
 
 //Font Stacks 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
