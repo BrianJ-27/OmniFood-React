@@ -10,10 +10,11 @@ const SectionFormV2 = () => {
   });
 
   const handleUpdate = (field, { target }) => {
-    setFormData({
-      ...formData,
-      [field]: target.value
-    });
+      setFormData({
+        ...formData,
+        [field]: target.value,
+        [field]: target.checked
+      });
   };
 
   const handleSubmitForm = event => {
