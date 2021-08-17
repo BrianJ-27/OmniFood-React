@@ -2,27 +2,35 @@ import "./scss/styles.scss";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import contactPage from "./components/header-elements/ContactUs";
-import howItWorks from "./components/header-elements/HowItWorks";
-import ourCities from "./components/header-elements/OurCities";
-import foodDelivery from "./components/header-elements/FoodDelivery";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Switch, Route } from "react-router";
+import ContactPage from "./components/pages/ContactUs";
+import HowItWorks from "./components/pages/HowItWorks";
+import OurCities from "./components/pages/OurCities";
+import FoodDelivery from "./components/pages/FoodDelivery";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Header />
       <Switch>
         <Route exact path="/">
           <Main />
         </Route>
-        <Route path="./components/header-elements/FoodDelivery.js" component={foodDelivery} />
-        <Route path="./components/header-elements/HowItWorks.js" component={howItWorks} />
-        <Route path="./components/header-elements/OurCities.js" component={ourCities} />
-        <Route path="./components/header-elements/ContactUs.js" component={contactPage} />
+        <Route path="/ContactPage">
+          <ContactPage />
+        </Route>
+        <Route path="/HowItWorks">
+          <HowItWorks />
+        </Route>
+        <Route path="/OurCities">
+          <OurCities />
+        </Route>
+        <Route path="/FoodDelivery">
+          <FoodDelivery />
+        </Route>
       </Switch>
       <Footer />
-    </Router>
+    </>
   );
 };
 
