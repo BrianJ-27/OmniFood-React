@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/OmniFood-React/static/css/main.25bb4937.chunk.css",
+    "main.js": "/OmniFood-React/static/js/main.ebdec53c.chunk.js",
+    "main.js.map": "/OmniFood-React/static/js/main.ebdec53c.chunk.js.map",
+    "runtime-main.js": "/OmniFood-React/static/js/runtime-main.32157431.js",
+    "runtime-main.js.map": "/OmniFood-React/static/js/runtime-main.32157431.js.map",
+    "static/js/2.b42ac3a3.chunk.js": "/OmniFood-React/static/js/2.b42ac3a3.chunk.js",
+    "static/js/2.b42ac3a3.chunk.js.map": "/OmniFood-React/static/js/2.b42ac3a3.chunk.js.map",
+    "index.html": "/OmniFood-React/index.html",
+    "static/css/main.25bb4937.chunk.css.map": "/OmniFood-React/static/css/main.25bb4937.chunk.css.map",
+    "static/js/2.b42ac3a3.chunk.js.LICENSE.txt": "/OmniFood-React/static/js/2.b42ac3a3.chunk.js.LICENSE.txt",
+    "static/media/1.b220fbc3.jpg": "/OmniFood-React/static/media/1.b220fbc3.jpg",
+    "static/media/2.4eee7ad4.jpg": "/OmniFood-React/static/media/2.4eee7ad4.jpg",
+    "static/media/3.fdf127e0.jpg": "/OmniFood-React/static/media/3.fdf127e0.jpg",
+    "static/media/4.6ba52385.jpg": "/OmniFood-React/static/media/4.6ba52385.jpg",
+    "static/media/5.a1788115.jpg": "/OmniFood-React/static/media/5.a1788115.jpg",
+    "static/media/6.f1b75c8e.jpg": "/OmniFood-React/static/media/6.f1b75c8e.jpg",
+    "static/media/7.287e3a80.jpg": "/OmniFood-React/static/media/7.287e3a80.jpg",
+    "static/media/8.3e3af448.jpg": "/OmniFood-React/static/media/8.3e3af448.jpg",
+    "static/media/app-iPhone.496b3538.png": "/OmniFood-React/static/media/app-iPhone.496b3538.png",
+    "static/media/styles.scss": "/OmniFood-React/static/media/hero-bg.91a5a7f3.jpeg",
+    "static/media/berlin.e3c6d081.jpg": "/OmniFood-React/static/media/berlin.e3c6d081.jpg",
+    "static/media/customer-1.5d0d9b32.jpg": "/OmniFood-React/static/media/customer-1.5d0d9b32.jpg",
+    "static/media/customer-2.0b0c883a.jpg": "/OmniFood-React/static/media/customer-2.0b0c883a.jpg",
+    "static/media/download-app.15f01eef.svg": "/OmniFood-React/static/media/download-app.15f01eef.svg",
+    "static/media/lisbon-3.cb02b54d.jpg": "/OmniFood-React/static/media/lisbon-3.cb02b54d.jpg",
+    "static/media/logo-white.fb523114.png": "/OmniFood-React/static/media/logo-white.fb523114.png",
+    "static/media/london.e596be4f.jpg": "/OmniFood-React/static/media/london.e596be4f.jpg",
+    "static/media/san-francisco.28751ab3.jpg": "/OmniFood-React/static/media/san-francisco.28751ab3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32157431.js",
+    "static/js/2.b42ac3a3.chunk.js",
+    "static/css/main.25bb4937.chunk.css",
+    "static/js/main.ebdec53c.chunk.js"
+  ]
+}
