@@ -13,21 +13,11 @@ const App = () => {
     <>
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Main />
-        </Route>
-        <Route path="/ContactPage">
-          <ContactPage />
-        </Route>
-        <Route path="/HowItWorks">
-          <HowItWorks />
-        </Route>
-        <Route path="/OurCities">
-          <OurCities />
-        </Route>
-        <Route path="/FoodDelivery">
-          <FoodDelivery />
-        </Route>
+        <Route exact path="/" component={Main}/>
+        <Route path="/HowItWorks" component={HowItWorks}/>
+        <Route path="/OurCities" component={OurCities}/>
+        <Route path="/FoodDelivery" component={FoodDelivery}/>
+        <Route path="/ContactPage" component={ContactPage}/>   
       </Switch>
       <Footer />
     </>
