@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/OmniFood-React/static/css/main.25bb4937.chunk.css",
-    "main.js": "/OmniFood-React/static/js/main.dc3b4f15.chunk.js",
-    "main.js.map": "/OmniFood-React/static/js/main.dc3b4f15.chunk.js.map",
+    "main.js": "/OmniFood-React/static/js/main.1e0b1007.chunk.js",
+    "main.js.map": "/OmniFood-React/static/js/main.1e0b1007.chunk.js.map",
     "runtime-main.js": "/OmniFood-React/static/js/runtime-main.3d571352.js",
     "runtime-main.js.map": "/OmniFood-React/static/js/runtime-main.3d571352.js.map",
-    "static/js/2.32dc9913.chunk.js": "/OmniFood-React/static/js/2.32dc9913.chunk.js",
-    "static/js/2.32dc9913.chunk.js.map": "/OmniFood-React/static/js/2.32dc9913.chunk.js.map",
+    "static/js/2.f958a1ee.chunk.js": "/OmniFood-React/static/js/2.f958a1ee.chunk.js",
+    "static/js/2.f958a1ee.chunk.js.map": "/OmniFood-React/static/js/2.f958a1ee.chunk.js.map",
     "index.html": "/OmniFood-React/index.html",
     "static/css/main.25bb4937.chunk.css.map": "/OmniFood-React/static/css/main.25bb4937.chunk.css.map",
-    "static/js/2.32dc9913.chunk.js.LICENSE.txt": "/OmniFood-React/static/js/2.32dc9913.chunk.js.LICENSE.txt",
+    "static/js/2.f958a1ee.chunk.js.LICENSE.txt": "/OmniFood-React/static/js/2.f958a1ee.chunk.js.LICENSE.txt",
     "static/media/1.b220fbc3.jpg": "/OmniFood-React/static/media/1.b220fbc3.jpg",
     "static/media/2.4eee7ad4.jpg": "/OmniFood-React/static/media/2.4eee7ad4.jpg",
     "static/media/3.fdf127e0.jpg": "/OmniFood-React/static/media/3.fdf127e0.jpg",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3d571352.js",
-    "static/js/2.32dc9913.chunk.js",
+    "static/js/2.f958a1ee.chunk.js",
     "static/css/main.25bb4937.chunk.css",
-    "static/js/main.dc3b4f15.chunk.js"
+    "static/js/main.1e0b1007.chunk.js"
   ]
 }
